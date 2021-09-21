@@ -1,0 +1,107 @@
+\documentclass{article}
+
+\usepackage[margin=0.5in]{geometry}
+
+\usepackage{titlesec}
+
+%\usepackage{fontspec}
+\usepackage{fontawesome}
+
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{enumitem}
+
+% Font
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+%\setmainfont{Garamond}
+\usepackage[defaultsans]{droidsans}
+
+% Title/section formatting
+\titleformat{\section}
+{\normalfont\large\bfseries}{\thesection}{}{}[{\titlerule[0.4pt]}]
+\titlespacing*{\section}{0pt}{0.5\baselineskip}{\baselineskip}
+
+% Disable page numbering 
+\pagestyle{empty}
+
+% -------------- Begin document -------------- 
+\begin{document}
+	
+	\begin{center}
+		% Title
+		\par{{\Large \textbf{Stuart Ballantyne}}\par}
+	\end{center}
+	
+	\begin{center}
+		% Info
+		5 Ayton House, Abbey Walk \hfill \href{mailto:sb362@st-andrews.ac.uk}{\faEnvelope\ sb362@st-andrews.ac.uk}\\
+		St Andrews, Fife \hfill \faMobile\ (+44) 07421 836952\\
+		KY16 9BF \hfill \href{https://github.com/sb362}{\faGithub\ sb362}
+	\end{center}
+	
+	\setlist{nosep}
+	\section*{Education}
+	\begin{tabular}{p{15.6cm}l}
+		% University
+		\textbf{University of St Andrews}, BSc (Hons) in Physics & \textsc{2018 -- Present} \\
+		\begin{itemize}
+			\item Year four (final)
+			\item Expected graduation June 2022
+			\item Modules include: object-oriented programming (using Java), multivariate and vector calculus, linear algebra, mathematical modelling, electronics, computational physics, signal processing, data mining, transferable skills
+		\end{itemize}\\
+		% High school
+		\textbf{Bathgate Academy} & \textsc{2012 -- 2018} \\
+		\begin{itemize}
+			\item \textbf{Advanced Highers:} Mathematics, Computer Science, and Physics
+			\item \textbf{Highers:} Mathematics, Computer Science, Physics, Chemistry, and English
+		\end{itemize}
+	\end{tabular}
+	\vspace{-1ex}
+	\setlist{}
+	
+	\section*{Experience}
+	\begin{tabular}{p{15.6cm}l}
+		% Canon Medical internship
+		\textbf{Canon Medical Research Europe}, Software Engineering Intern & \textsc{June -- Aug 2021}\\
+		Working in an Agile enviornment, I prototyped a client-side (web browser based) 2D medical image renderer, comparing performance renderers using SDL and WebAssembly, GPU.js, and Cornerstone.js. Learned TypeScript and gained a better understanding of JavaScript. Results were presented to the rest of the company at the end of the internship.
+	\end{tabular}
+	
+	\section*{Skills}
+	\begin{tabular}{p{15.6cm}}
+		\vspace{-\topsep}
+		\begin{itemize}
+			\vspace{-\topsep}
+			\item \textbf{Programming languages}: C++ (most experience), Python, TypeScript, JavaScript, Lua, Mathematica, Java
+			\item Knowledge of Git, CMake, Meson, WASM, Node.js, and experience using Windows and Linux for development
+		\end{itemize}
+	\end{tabular}
+	\vspace{-1ex}
+	
+	\section*{Projects}
+	\begin{tabular}{p{15.6cm}}
+		% Physics group discovery project
+		\textbf{Two-week physics group project: modelling trajectory of golf balls}
+		\begin{itemize}
+			\item Led a team of five to model the flight path of a golf ball as part of first-year physics coursework
+			\item Quickly learned Python and the NumPy API so I could develop the model
+			\item Model considered effects such as drag, lift, spin, and effect of dimples on the ball trajectory
+			\item Helped format the 2000-word report using LaTeX; wrote about the underlying physics and the approximations used
+		\end{itemize}
+		
+		% Chess engine
+		\textbf{Chess engine}
+		\begin{itemize}
+			\item Created a C++17 chess engine as a pet project
+			\item Learned about multithreading, game tree search algorithms, and how to optimise C++ code
+		\end{itemize}
+	\end{tabular}
+	\vspace{-1ex}
+	
+	\section*{Other}
+	\begin{itemize}
+		\item Active member of the St Andrews chess society
+		\item Volunteered and helped 2nd-year Computing Science students during high school
+	\end{itemize}
+	
+	% -------------- End document -------------- 
+\end{document}
