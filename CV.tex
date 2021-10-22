@@ -14,6 +14,7 @@
 % Font
 \usepackage{helvet}
 \renewcommand{\familydefault}{\sfdefault}
+%\usepackage{ebgaramond}
 
 % Title/section formatting
 \titleformat{\section}
@@ -40,7 +41,7 @@
 	\end{center}
 	
 	% Uncomment this to remove gaps between items
-	%\setlist{nosep}
+	\setlist{nosep}
 	\section*{Education}
 		% University
 		\textbf{University of St Andrews}, BSc (Hons) in Physics \hfill \textsc{2018 -- Present}
@@ -50,12 +51,12 @@
 			\item Modules include: object-oriented programming (using Java), multivariate and vector calculus, linear algebra, mathematical modelling, electronics, computational physics, signal processing, data mining, transferable skills
 		\end{itemize}
 		% High school
+		\bigskip
 		\textbf{Bathgate Academy} \hfill \textsc{2012 -- 2018}
 		\begin{itemize}
 			\item \textbf{Advanced Highers:} Mathematics, Computer Science, and Physics
 			\item \textbf{Highers:} Mathematics, Computer Science, Physics, Chemistry, and English
 		\end{itemize}	
-	\setlist{}
 	
 	\section*{Experience}
 		% Canon Medical internship
@@ -64,31 +65,48 @@
 		\begin{itemize}
 			\item Prototyped a client-side (web browser based) 2D medical image renderer, comparing performance of renderers built using SDL+WebAssembly, GPU.js, and Cornerstone.js
 			\item Learned TypeScript and gained a better understanding of JavaScript
-			\item Results were presented to the rest of the company at the end of the internship
+			\item Presented results to the rest of the company at the end of the internship
 		\end{itemize}
 	
 	\section*{Skills}
 		\begin{itemize}
 			\item \textbf{Proficient in:} C++, Python, Lua, Java
-			\item \textbf{Familiar with:} TypeScript, JavaScript, Mathematica
-			\item Knowledge of Git, CMake, Meson, WASM, Node.js
+			\item \textbf{Familiar with:} C, TypeScript, JavaScript, Mathematica
+			\item Knowledge of Git, CMake, Meson, WASM, Node.js, Flask
 			\item Experience using Windows and Linux for development
 		\end{itemize}
 	
 	\section*{Projects}
+		% BSc project
+		\textbf{Final-year physics project: millimetre wave cloud profiling radar} \hfill \textsc{Oct 2021 -- Present}
+		\begin{itemize}
+			\item Project requires upgrading radar control software written in C (NI LabWindows/CVI) to allow for continuous data acquisition
+			\item Conducting a detailed performance characterisation of the radar, in particular assessing effects of ambient temperature on radar stability
+			\item Skills: C, Matlab, signal processing
+		\end{itemize}
 		% Physics group discovery project
-		\textbf{Two-week physics group project: modelling trajectory of golf balls}
+		\bigskip
+		\textbf{Two-week physics group project: modelling trajectory of golf balls} \hfill \textsc{April 2019 -- May 2019}
 		\begin{itemize}
 			\item Led a team of five to model the flight path of a golf ball as part of first-year physics coursework
 			\item Quickly learned Python and the NumPy API so I could develop the model
 			\item Model considered effects such as drag, lift, spin, and effect of dimples on the ball trajectory
-			\item Helped format the 2000-word report using LaTeX; wrote about the underlying physics and the approximations used
+			\item Helped format the 2000-word report using \LaTeX ; wrote about the underlying physics and the approximations used
 		\end{itemize}
 		% Chess engine
-		\textbf{Chess engine}
+		\bigskip
+		\textbf{Chess engine} \hfill \textsc{Dec 2019 -- Sept 2020}
 		\begin{itemize}
 			\item Created a C++17 chess engine as a pet project
 			\item Improved my knowledge of OOP, data structures, game tree search algorithms, and multithreading
+			\item Uses Meson as the build system, previously CMake
+		\end{itemize}
+		% Chess opening tree
+		\bigskip
+		\textbf{Chess opening tree} \hfill \textsc{Oct 2021 -- Present}
+		\begin{itemize}
+			\item Currently making an opening tree visualiser using C++17
+			\item Expanded my knowledge of data structures (in particular trees), parsing, etc.
 		\end{itemize}
 	
 	\section*{Other}
